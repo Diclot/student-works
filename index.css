@@ -1,0 +1,334 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgba(245, 245, 245, 0.835);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: green;
+  height: 25px;
+  font-size: 16px;
+  /* Start from top */
+  align-items: flex-start;
+}
+header p {
+  font-size: 10px;
+}
+header div select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  background-color: rgba(245, 245, 245, 0.835);
+  border-radius: 5px;
+  border-style: none;
+}
+nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+}
+nav ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.navbar li select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  border-radius: 5px;
+  border-style: none;
+}
+.navbar li select option {
+  background-color: rgba(245, 245, 245, 0.835);
+  border-radius: 5px;
+  border-style: none;
+}
+
+#search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  background-color: rgba(245, 245, 245, 0.835);
+  border-style: none;
+  border-radius: 10px;
+}
+#search input {
+  border-style: none;
+  background-color: rgba(245, 245, 245, 0.835);
+  border-radius: 10px;
+}
+/* Input on focus */
+#search input:focus {
+  outline: none;
+}
+
+#search button {
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgba(245, 245, 245, 0.835);
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+.firts_offer_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  margin: 2em 2em;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 187, 0);
+  border-radius: 10px;
+}
+
+/* Filters */
+.filter_options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+.left select {
+  padding: 3px;
+  background-color: rgba(245, 245, 245, 0.835);
+  border-radius: 15px;
+  border-style: none;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-gap: 1px; */
+  /* padding: 1em; */
+}
+/* Head phones for you  */
+.headphones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-gap: 1px; */
+  /* padding: 1em; */
+}
+.headphone {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  margin: 1em 1em;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: relative;
+}
+.headphone img {
+  width: 100%;
+  height: 48%;
+  border-radius: 10px;
+}
+#like {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  border: none;
+  background-color: unset;
+}
+#desc {
+  /* displa the first 20 characters */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.rate {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#add_to_cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+#add_to_cart:hover {
+  background-color: green;
+  color: white;
+}
+footer{
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  background-color: green;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  gap: 50px 0 0 25px;
+text-align: center;
+}
+.dii{
+  text-align: center;
+  margin-right: 50;
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+/* @keyframes diiAnimation{
+  0%{
+    bottom: 0px;
+    height: 100;
+    width: 100;
+    background-color: yellowgreen;
+  }
+  50%{
+    bottom: 10px;
+    width: 200;
+    height: 200%;
+    background-color: rgb(24, 27, 209);
+    border-radius: 0;
+  }
+  100%{
+    bottom: 0px;
+    height: 50%;
+    width: 200;
+    background-repeat: repeat-y 50%;
+  background-color: rgb(215, 250, 15);
+   border-radius: 5%;
+
+}
+200%{
+  height: 50%;
+  width: 1000px;
+  border-bottom: rgb(220, 230, 216);
+}
+}
+.dii{
+  border-radius: 50px;
+  width: 50px;
+  height: 100px;
+  animation-name: diiAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; 
+} */
